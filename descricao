@@ -1,0 +1,71 @@
+Buscas em grafos
+
+O objetivo do trabalho é a implementação dos algoritmos de busca em largura
+e busca em profundidade em um grafo dado.
+Entrada:
+
+A entrada deve ser lida da entrada padrão (stdin) e deve ser um arquivo
+texto com números inteiros. O primeiro número, N, é a quantidade de vértices
+(os vértices são indexados com os números de 1 a N). Os números seguintes
+vem em pares e representam as arestas (pares de vértices). O vértice inicial
+para as buscas será sempre o vértice 1.
+
+Exemplo (ciclo de 4 vértices):
+
+  4
+  1 2
+  1 3
+  2 4
+  3 4
+
+Saída:
+
+A saída deve ser escrita na saída padrão (stdout) e deve ser formada por uma
+lista de vértices visitados (na ordem em que são visitados), separados por
+espaços, uma lista de arestas visitadas como árvore e uma lista das arestas
+visitadas como não-árvore.
+
+Cada aresta é descrita com uma letra e 2 números separados por espaços. A
+letra, a ou n, indica se é aresta de árvore ou não-árvore, respectivamente.
+O primeiro número é o índice do vértice inicial e o segundo o índice do
+vértice final. Considere que o vértice inicial é o vértice a partir do qual
+a aresta foi visitada. Cada aresta ocupa uma linha.
+
+Exemplo (busca em largura):
+
+  1 2 3 4
+  a 1 2
+  a 1 3
+  a 2 4
+  n 3 4
+
+Requisitos mínimos:
+
+O trabalho deve ser feito de forma que possa ser compilado e executado nas
+servidoras de computação do Departamento de Informática.
+O que deve ser entregue:
+
+Além dos arquivos fonte, deve acompanhar um makefile e um arquivo README
+explicando o que foi feito e com o nome dos autores. Qualquer
+particularidade deve estar descrita neste texto.
+
+Para compilar vou usar o comando make (sem nenhum parâmetro), portanto
+preparem o makefile para fazer isso. O resultado do make deverá ficar no
+mesmo diretório onde está o makefile. Os executáveis devem ter os nomes dfs
+(Depth-first Search - busca em profundidade) e bfs (Breadth-first Search -
+busca em largura).
+Forma de entrega:
+
+O trabalho deve ser empacotado em um arquivo login1-login2-login3.tar.gz,
+onde login1-login2-login3 é uma string com os logins dos integrantes da
+equipe nas servidoras do DInf. Ao descompactar este arquivo deverá ser
+criado um diretório de nome login1-login2-login3 que conterá todos os demais
+arquivos. O make deverá funcionar dentro deste diretório (não em
+subdiretórios).
+
+Este arquivo deve ser enviado por e-mail ao endereço do professor (andre)
+com o assunto "CI065-trab1" (exatamente).
+Equipe:
+
+O trabalho pode ser feito em equipes de 2 ou 3 (três) alunos de graduação ou
+por 1 (um) aluno do mestrado.
