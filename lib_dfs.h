@@ -5,5 +5,6 @@
 
 int ** cria_matriz(int tam);
 void insere_aresta(int **m, int i, int j);
+void destroi_matriz(int **m, int tam);
 
 #endif

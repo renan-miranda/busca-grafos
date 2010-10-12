@@ -37,3 +37,13 @@ void insere_aresta(int **m, int i, int j)
 {
     m[i][j] = EXISTE;
 }
+
+void destroi_matriz(int **m, int tam)
+{
+    int i;
+    for(i=0; i<tam ;i++)
+    {
+        free(m[i]);
+    }
+    free(m);
+}

@@ -19,7 +19,7 @@ int main(void)
 
 //    busca_profundidade(m, 1);
 
-//    destroi_matriz(m, n_vert);
+    destroi_matriz(m, n_vert);
 
     return 0;
 }
